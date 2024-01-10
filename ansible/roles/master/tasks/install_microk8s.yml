@@ -1,0 +1,25 @@
+# install microk8s
+
+- name: Install microk8s
+  snap: 
+    name: microk8s
+    channel: 1.25
+    classic: yes
+- name: Add user {{ user }} to microk8s group
+  user:
+    append: true
+    groups: [ "microk8s" ]
+    name: "{{ user }}"
+- name: Change ~/.kube owner to {{ user }}
+  file:
+    path: $HOME/.kube
+    state: directory
+    owner: "{{ user }}"
+    force: yes
+    recurse: yes
+- name: Start microk8s
+  command: 
+    cmd: microk8s start
+- name: check status
+  command:
+    cmd: microk8s status --wait-ready
