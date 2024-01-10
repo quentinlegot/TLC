@@ -1,11 +1,3 @@
 
-- name: enable microk8s DNS and storage
-  command:
-    cmd: microk8s enable dns storage
-
-- name: enable microk8s dashboard and ingress
-  command:
-    cmd: microk8s enable dashboard ingress
-- name: Enable microk8s registry
-  command:
-    cmd: microk8s enable registry
+- name: enable microk8s DNS, storage, dashboard, ingress and registry module
+  command: microk8s enable dns storage dashboard ingress registry

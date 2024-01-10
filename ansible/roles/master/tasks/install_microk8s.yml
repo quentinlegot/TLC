@@ -18,8 +18,6 @@
     force: yes
     recurse: yes
 - name: Start microk8s
-  command: 
-    cmd: microk8s start
+  command: microk8s start
 - name: check status
-  command:
-    cmd: microk8s status --wait-ready
+  command: microk8s status --wait-ready
