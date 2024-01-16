@@ -1,3 +1,6 @@
 [submodule "TPDockerSampleApp"]
 	path = TPDockerSampleApp
 	url = https://github.com/quentinlegot/TPDockerSampleApp
+[submodule "doodlestudent"]
+	path = doodlestudent
+	url = https://github.com/quentinlegot/doodlestudent
