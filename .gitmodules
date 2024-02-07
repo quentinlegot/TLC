@@ -4,3 +4,6 @@
 [submodule "doodlestudent"]
 	path = doodlestudent
 	url = https://github.com/quentinlegot/doodlestudent
+[submodule "doodle-config"]
+	path = doodle-config
+	url = git@github.com:quentinlegot/doodle-config.git
